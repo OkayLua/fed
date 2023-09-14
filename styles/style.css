@@ -1,9 +1,6 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
 
 
 
@@ -15,8 +12,14 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-text-white: #eee;
+	--color-background: #eee;
+	--header-font: Roboto;
+	--background-black: #111;
+	--main-color-background: #FFEDED;
+	--main-color: #FF5353;
+	--standard-width: 84.375%;
 }
 
 
@@ -28,4 +31,272 @@
 /****************/
 
 /* jouw code */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Sofia-Pro;
+	list-style: none;
+}
 
+/* { HEADER } */
+/**************/
+#homepage header {
+	margin: 0.2em 0 3em 0;
+	border-bottom: 1px rgba(125, 125, 125, 0.2) solid;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+#homepage header img {
+	width: 94%;
+	margin: 4% 15%;
+}
+
+#homepage header a {
+	font-weight: 600;
+	justify-self: right;
+	align-self: center;
+	border-radius: 50px;
+	padding: 4.5% 9.5%;
+	font-size: 1.0em;
+	background-color: var(--background-black);
+	color: var(--color-text-white);
+	margin-right: 0.5em;
+}
+
+#homepage section:first-of-type ul {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+#homepage section:first-of-type li {
+	width: var(--standard-width);
+}
+
+/* { TITLE AND SECUNDARY NAV } */
+/*******************************/
+#homepage h1 {
+	font-size: 2.6em;
+	font-weight: 800;
+	line-height: 120%;
+	margin-bottom: 0.3em;
+}
+
+#homepage section:first-of-type p {
+	color: var(--main-color);
+	height: 3em;
+}
+
+#homepage section:first-of-type img {
+	height: 1.35em;
+	width: auto;
+	padding: 0 1.13em;
+}
+
+#homepage section:first-of-type a {
+	color: var(--main-color);
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	background-color: var(--main-color-background);
+	display: flex;
+	height: 3.1em;
+	border-radius: 16px;
+	align-items: center;
+	font-size: 1.2em;
+	margin: 0.4em 0;
+}
+
+#homepage section:first-of-type img:last-of-type {
+	height: 2em;
+	width: auto;
+	margin-left: auto;
+	padding-right: 8%;
+}
+
+/* { MUSIXMATCH PRO BANNER } */
+/*****************************/
+#homepage section:nth-of-type(2) {
+	display: flex;
+	flex-flow: column nowrap;
+	width: var(--standard-width);
+	margin: auto;
+	align-items: center;
+	margin-top: 15%;
+	text-align: center;
+	color: var(--color-text-white);
+	font-size: 1.36em;
+	height: 612px;
+	border-radius: 24px;
+	background: linear-gradient(0.25turn, #0B0B0B, #191919);
+}
+
+#homepage section:nth-of-type(2) h2 {
+	width: 90%;
+	line-height: 100%;
+	font-weight: 600;
+}
+
+#homepage section:nth-of-type(2) img:first-of-type {
+	width: 57%;
+	margin: 1.9em 0 0.9em 0;
+}
+
+#homepage section:nth-of-type(2) a {
+	font-size: 0.8em;
+	font-weight: 600;
+	background-color: var(--main-color);
+	padding: 0.6em 1.5em 0.7em 1.5em;
+	margin: 2.2em 0 1.8em 0;
+	border-radius: 21px;
+}
+
+#homepage section:nth-of-type(2) img:last-of-type {
+	width: 95%;
+	justify-self: end;
+}
+
+
+
+/* { TITLE AND SECUNDARY NAV } */
+/*******************************/
+#homepage main section:nth-of-type(3){
+	display: flex;
+	flex-flow: column nowrap;
+}
+#homepage main section:nth-of-type(3) ul{
+	margin-top: 4em;
+	height: 24rem;
+	display: flex;
+	flex-flow: row nowrap;
+	overflow-x: scroll;
+	color: var(--color-text-white);
+}
+#homepage main section:nth-of-type(3) li a{
+	display: grid;
+	grid-template-columns: 1rem 15rem 1rem;
+	grid-template-rows: fit-content(50%) 9% 3% fit-content(32%) 4% 4%;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	padding: .5em;
+}
+
+#homepage main section:nth-of-type(3) li a img:first-of-type{
+	grid-area: 1 / 1 / 6 / 4;
+	width: 100%;
+}
+
+#homepage main section:nth-of-type(3) li a img:last-of-type {
+	grid-area: 2 / 2 / 3 / 3;
+	height: 100%;
+}
+
+#homepage main section:nth-of-type(3) li a p {
+	grid-area: 4 / 2 / 5 / 3;
+	font-size: 1.06em;
+}
+
+#homepage main section:nth-of-type(3) li:last-of-type img:last-of-type {
+	height: 50%;
+	align-self: end;
+}
+#homepage main section:nth-of-type(3) li:first-of-type{
+	padding-left : 2em;
+}
+#homepage main section:nth-of-type(3) li:last-of-type{
+	padding-right: 2em;
+}
+#homepage main section:nth-of-type(3)>a{
+	padding: 3% 4%;
+	border-radius: 15px;
+	margin-left: 10%;
+	font-size: 1.1em;
+	width: fit-content;
+	background-color: #F5F5F5;
+}
+
+
+/* { TITLE AND SECUNDARY NAV } */
+/*******************************/
+#homepage main section:nth-of-type(4){
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	font-weight: 100;
+	font-size: 1.8em;
+}
+
+#homepage main section:nth-of-type(4) p{
+	width: 326px;
+	font-size: 0.8em;
+	margin: 3em 0 1em 0;
+}
+#homepage main section:nth-of-type(4) ul{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 0.55em;
+	grid-template-rows: repeat(3, fit-content(100%));
+	list-style-type: none;
+}
+#homepage main section:nth-of-type(4) li{
+	height: fit-content;
+}
+#homepage main section:nth-of-type(4) ul img{
+	height:1.55em;
+	width: auto;
+}
+
+/* { TITLE AND SECUNDARY NAV } */
+/*******************************/
+#homepage main section:nth-of-type(5){
+	display: grid;
+	grid-template-columns: 7.5% 85% 7.5%;
+}
+#homepage main section:nth-of-type(5) h2{
+	grid-area: 1 / 2 / 1 / 2;
+	font-size: 2.2em;
+}
+#homepage main section:nth-of-type(5) ul{
+	grid-area: 2 / 2 / 2 / 2;
+}
+#homepage main section:nth-of-type(5) li{
+	background-color: #F4F6FF;
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 2.2em 0;
+	border-radius: 16px;
+}
+#homepage main section:nth-of-type(5) h3{
+	font-size: 1.8em;
+	margin: 0.9em 0 0.5em 0.6em;
+}
+#homepage main section:nth-of-type(5) p{
+	font-weight: 100;
+	font-size: 1.47em;
+	margin: 0.2em 0 0.5em 0.6em;
+}
+#homepage main section:nth-of-type(5) li>img{
+	width: 100%;
+}
+#homepage main section:nth-of-type(5) li:nth-of-type(3)>img{
+	background-color: #F4F2FF;
+}
+#homepage main section:nth-of-type(5) li a{
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: var(--background-black);
+	width: fit-content;
+	color: var(--color-text-white);
+	padding: 8px 16px;
+	border-radius: 50px;
+	font-weight: 600;
+	font-size: 1.2em;
+	margin: 1.3em 0.6em ;
+}
+#homepage main section:nth-of-type(5) li a img{
+	width: 1.6rem;
+	margin-right: 6.5%;
+}
+
+/* { TITLE AND SECUNDARY NAV } */
+/*******************************/
