@@ -75,8 +75,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
+  <img src="readme-images/breakdown1.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown2.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown3.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown4.png" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
@@ -92,6 +94,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Het was best lastig om terug te komen in HTML en CSS aangezien ik dit al lang niet gedaan had maar ik had al snel de draad weer opgepakt. Het was leuk om weer aan de slag te gaan en ik zag al snel dingen vormen mijn code is nog niet perfect omdat ik vooral een beetje aan het opwarmen was. Hier en daaar heb ik wel al een paar dingen aangepast maar ik ben van plan zeker nog wel meer te doen omdat ik voor dezelfde soort element ook soms hele andere code gebruk later omdat deze eigenlijk wel echt een stukje beter is. Ik wil dus ook graag deze technieken bij oudere elementen gaan gebruiken.
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -106,8 +110,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - Let op het verslag!
+  - Misschien dat ik ook de navigatie van de site kan verbeteren. 
   - nog een punt
   - ...
 
@@ -123,7 +127,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Ik merkte al snel dat grote deel van de CSS een stuk beter kon omdat ik al snel weer trucjes en manier herinnerden. Ik ga dus het eerste deel van CSS als niet de hele CSS opnieuw doen om ervoor te zorgen dat ik alle CSS zo netjes en simpel mogelijk heb. Zo gaat niet alleen de kwaliteit van mijn website maar ook van mijn code er op vooruit.
 
 
   ### Agenda voor meeting
