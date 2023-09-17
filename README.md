@@ -39,8 +39,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.musixmatch.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Homepage - Musicmatch
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Homepage Musicmatch
+  <img src="readme-images/homepagemusixmatch.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
@@ -57,6 +57,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  <ul>
+    <li>De website is een frame in een frame. Hierdoor is hij met een screenreader lastig te navigeren omdat de kans groot is dat je de hele content skipt en beweegt tussen de header (die trouwens ook geen navigatie heeft) of de footer.</li>
+    <li>Veel elementen zitten niet in tags zoals tekst die niet in Headers of P's zitten.</li>
+    <li>Door weinig kleurcontrast zijn sommige knoppen niet toegankelijk</li>
+    <li>Navigeren in de website is een hel en op veel plekken kom je niet door de homepage en zijn alleen te bereiken via Laptop of google. Zoals lyrics pagina's</li>
+    <li>Foto's hebben geen ALT tekst en zitten vaak uberhaupt niet in een IMG tag</li>
+  </ul>
 
 </details>
 
@@ -70,11 +77,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
