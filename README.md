@@ -43,13 +43,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/homepagemusixmatch.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Musixmatch Pro pagina  
+  <img src="readme-images/musixmatchpro.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
 
-
+   
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
@@ -112,8 +112,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Let op het verslag!
   - Misschien dat ik ook de navigatie van de site kan verbeteren. 
-  - nog een punt
-  - ...
+  - Knoppen aanpassen voor contrast
 
 </details>
 
@@ -128,6 +127,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
  Ik merkte al snel dat grote deel van de CSS een stuk beter kon omdat ik al snel weer trucjes en manier herinnerden. Ik ga dus het eerste deel van CSS als niet de hele CSS opnieuw doen om ervoor te zorgen dat ik alle CSS zo netjes en simpel mogelijk heb. Zo gaat niet alleen de kwaliteit van mijn website maar ook van mijn code er op vooruit.
+
+ #### 18/09
+ Ik ben begonnen aan de 2e pagina. Voor deze pagina heb ik de volledige pagina opgedeeld in een grid voor de margins aan dezijkanten. Hierdoor kreeg ik wel een probleem toen ik een element had dat voledig spreide over de pagina.
+  <img src="readme-images/breakdown1.png" width="375px" alt="breakdown van de hele pagina">
+  Wat ik kon doen is een grid in een grid maken. Ik ga dan de volledige sectie in de hoofdgrid volledig uitspreiden ipv alleen in column 2 en dan dezelfde grid in de sectie maken en daarin alles in column 2 zetten behalve het element dat spreide.
+
+  Nog een probleem is de 2 overlappende foto's. Ik kon hiervoor nog een grid maken maar dan had ik een grid in een grid in een grid. Uiteindelijk heb ik besloten dat de foto op de achtergrond inderdaad gewoon een achtergrond was en heb ik deze erin gezet d.m.v. een css background image.
+    <img src="readme-images/breakdown1.png" width="375px" alt="breakdown van de hele pagina">
+ 
 
 
   ### Agenda voor meeting
