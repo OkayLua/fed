@@ -325,7 +325,7 @@ header a {
 	min-width: var(--standard-width);
 	margin: 2em 1.5%;
 }
-#homepage main section:nth-of-type(6) ul img{
+#homepage main section:nth-of-type(6) ul li img{
 	width: 100%;
 	border-radius: 16px;
 }
