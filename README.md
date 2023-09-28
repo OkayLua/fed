@@ -40,10 +40,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepage Musicmatch
+  <br>
   <img src="readme-images/homepagemusixmatch.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Musixmatch Pro pagina  
+  Musixmatch Pro pagina 
+  <br>
   <img src="readme-images/musixmatchpro.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -64,6 +66,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     <li>Navigeren in de website is een hel en op veel plekken kom je niet door de homepage en zijn alleen te bereiken via Laptop of google. Zoals lyrics pagina's</li>
     <li>Foto's hebben geen ALT tekst en zitten vaak uberhaupt niet in een IMG tag</li>
   </ul>
+Volledige eerste test:
+
 
 </details>
 
@@ -96,17 +100,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Het was best lastig om terug te komen in HTML en CSS aangezien ik dit al lang niet gedaan had maar ik had al snel de draad weer opgepakt. Het was leuk om weer aan de slag te gaan en ik zag al snel dingen vormen mijn code is nog niet perfect omdat ik vooral een beetje aan het opwarmen was. Hier en daaar heb ik wel al een paar dingen aangepast maar ik ben van plan zeker nog wel meer te doen omdat ik voor dezelfde soort element ook soms hele andere code gebruk later omdat deze eigenlijk wel echt een stukje beter is. Ik wil dus ook graag deze technieken bij oudere elementen gaan gebruiken.
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
@@ -128,33 +121,40 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
  Ik merkte al snel dat grote deel van de CSS een stuk beter kon omdat ik al snel weer trucjes en manier herinnerden. Ik ga dus het eerste deel van CSS als niet de hele CSS opnieuw doen om ervoor te zorgen dat ik alle CSS zo netjes en simpel mogelijk heb. Zo gaat niet alleen de kwaliteit van mijn website maar ook van mijn code er op vooruit.
 
- #### 18/09
+ ### 18/09
  Ik ben begonnen aan de 2e pagina. Voor deze pagina heb ik de volledige pagina opgedeeld in een grid voor de margins aan dezijkanten. Hierdoor kreeg ik wel een probleem toen ik een element had dat voledig spreide over de pagina.
-  <img src="readme-images/breakdown1.png" width="375px" alt="breakdown van de hele pagina">
+ <br>
+<img src="readme-images/breakdown1.png" width="375px" alt="breakdown van de hele pagina">
   Wat ik kon doen is een grid in een grid maken. Ik ga dan de volledige sectie in de hoofdgrid volledig uitspreiden ipv alleen in column 2 en dan dezelfde grid in de sectie maken en daarin alles in column 2 zetten behalve het element dat spreide.
 
   Nog een probleem is de 2 overlappende foto's. Ik kon hiervoor nog een grid maken maar dan had ik een grid in een grid in een grid. Uiteindelijk heb ik besloten dat de foto op de achtergrond inderdaad gewoon een achtergrond was en heb ik deze erin gezet d.m.v. een css background image.
+   <br>
     <img src="readme-images/breakdown1.png" width="375px" alt="breakdown van de hele pagina">
- 
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+ ### 21/09
+ Ik heb vandaag het carousel op de Pro Pagina gemaakt. Ik heb hiervoor javascript gebruikt Het was even uitvogelen nadat ik het lang niet heb gebruikt maar het is mij uiteindelijk gelukt met de volgende code:
+<br>
+<img src="readme-images/breakdown4.png" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/breakdown4.png" width="375px" alt="breakdown van de hele pagina">
+#### Opmerking
+Op een gegeven moment stopte de code met werken. Ik heb de carousel nu gemaakt met een opacity in plaats van display none property. De code ziet er nu als volgt uit:
+ <br>
+<img src="readme-images/breakdown4.png" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/breakdown4.png" width="375px" alt="breakdown van de hele pagina">
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  #### Voorbereiding:
 
+  #### Uitkomsten:
+  hier na afloop snel de uitkomsten van de meeting vastleggen
   - punt 1
   - punt 2
   - nog een punt
 - ...
+
+  ### 24/09
+  Ik ben na aanleiding van de feedback begonnen aan een hamburger menu om een navigatie op de mobiele pagina te zetten, iets wat de originele website niet had,
 
 </details>
 
