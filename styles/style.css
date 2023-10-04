@@ -13,17 +13,36 @@
 :root {
 	/* startje */
 	--color-text: #111;
-	--color-text-white: #eee;
-	--color-background: #eee;
-	--header-font: Roboto;
-	--background-black: #111;
+	--color-white: #fff;
+	--background: #fff;
 	--main-color-background: #FFEDED;
 	--main-color: #FF5353;
 	--standard-width: 84.375%;
 	--propagegridtemplate:5.29% 89.42% 5.29%;
 	--standaard-radius: 16px;
-	--background-dark: #101519;
+	--background-list: #F4F2FF;
+	--dark-background: yellow;
 }
+@media screen and (prefers-color-scheme: dark){
+	:root{
+		--color-text: #decccc;
+		--background: #101519;
+		--background-list: #1d252b;
+	}
+	#homepage section:first-of-type img{
+	filter: brightness(2.7);
+	}
+	#homepage section:first-of-type a{
+		--main-color-background: #FF5353;
+		--main-color: #FFEDED;
+	}
+	#homepage main section:nth-of-type(4) ul{
+		--color-white: var(--color-text)
+	}
+}
+
+
+
 
 
 
@@ -40,32 +59,140 @@
 	font-family: Sofia-Pro;
 	list-style: none;
 }
+@keyframes fadeIn {  
+	from {  
+		opacity: 0;  
+	}  
+	to {  
+		opacity: 1;  
+	}  
+}
+.hidden{
+	display: none;
+	opacity: 0;
+}
+.highcontrast *{
+	--background: black;
+	--color-text: white;
+	--main-color-background: white;
+	--background-list: black;
+}
+#homepage.highcontrast main section:nth-of-type(5) li, #homepage.highcontrast main section:nth-of-type(6) ul li{
+	border: 2px var(--main-color) solid;
+}
+#homepage.highcontrast main section:nth-of-type(6) ul li{
+	padding: 0.6em;
+	border-radius: 16px;
+}
+#homepage.highcontrast main section:nth-of-type(5) li a{
+	filter: invert(1);
+}
+.textlarge{
+	font-size: 20px;
+}
 
 /* { HEADER } */
 /**************/
 header {
-	margin: 0.2em 0 3em 0;
+	margin: 0.2em 0 0 0;
 	border-bottom: 1px rgba(125, 125, 125, 0.2) solid;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
+header button{
+	grid-area: 1 / 2 / 2 / 3;
+	justify-self: right;
+	margin-right: 1.5em;
+	border: none;
+	width: fit-content;
+	background: none;
 
-header img {
+}
+header button img{
+	height: 40%;
+}
+header>img, #propage header>a img{
 	width: 94%;
-	margin: 4% 15%;
+	margin-left: 15%;
+	align-self: center;
+}
+#propage header>button img{
+	filter: invert(1);
 }
 
 header a {
 	font-weight: 600;
-	justify-self: right;
-	align-self: center;
-	border-radius: 50px;
-	padding: 4.5% 9.5%;
-	font-size: 1.0em;
-	background-color: var(--background-black);
-	color: var(--color-text-white);
-	margin-right: 0.5em;
+	font-size: 2em;
+	color: white;
+	width: 100%;
+	text-decoration: none;
+	padding: 0.1em 0.4em;
+	transition: 0.5s;
 }
+header nav{
+	z-index: 1;
+	display: flex;
+	flex-flow: column nowrap;
+	position: fixed;
+	margin-top: -0.2em;
+	background-image: url(../images/testoback.png);
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+header nav>img{
+	margin-top: 6em;
+	width: 50%;
+}
+.textlarge header nav>img{
+	margin-top: 1em;
+}
+header nav button:first-of-type{
+	position: absolute;
+	top: 2em;
+	left: 2em;
+	border:none;
+	background: none;
+	height: 6em;
+}
+header nav button:nth-of-type(2){
+	position: absolute;
+	top: 0em;
+	right: 0em;
+	border:none;
+	background: none;
+	filter: invert(1);
+	height: 10em;
+}
+header nav button:last-of-type{
+	position: absolute;
+	top: 0em;
+	right: 5em;
+	border:none;
+	background: none;
+	filter: invert(1);
+	height: 10em;
+}
+header ul{
+	margin-top: 4em;
+	font-size: 0;
+}
+header li{
+	margin: 1em 1em;
+}
+header li a:focus{
+	border: 2px solid white;
+	border-radius: 50px;
+}
+header li a:hover{
+	font-size: 1.8em;
+}
+
 
 #homepage section:first-of-type ul {
 	display: flex;
@@ -80,15 +207,15 @@ header a {
 /* { TITLE AND SECUNDARY NAV } */
 /*******************************/
 #homepage h1 {
+	padding-top: 3rem;
 	font-size: 2.6em;
 	font-weight: 800;
 	line-height: 120%;
 	margin-bottom: 0.3em;
+	color: var(--color-text);
 }
-
-#homepage section:first-of-type p {
-	color: var(--main-color);
-	height: 3em;
+#homepage main{
+	background-color: var(--background);
 }
 
 #homepage section:first-of-type img {
@@ -127,9 +254,9 @@ header a {
 	align-items: center;
 	margin-top: 15%;
 	text-align: center;
-	color: var(--color-text-white);
+	color: var(--color-text);
 	font-size: 1.36em;
-	height: 612px;
+	min-height: 41rem;
 	border-radius: 24px;
 	background: linear-gradient(0.25turn, #0B0B0B, #191919);
 }
@@ -161,19 +288,25 @@ header a {
 
 
 
-/* { TITLE AND SECUNDARY NAV } */
+/* { OUR PARTNERS } */
 /*******************************/
 #homepage main section:nth-of-type(3){
 	display: flex;
 	flex-flow: column nowrap;
 }
+#homepage main section:nth-of-type(3) h2{
+	font-size: 2.2em;
+	margin: 2em 0 0 2rem;
+	color: var(--color-text);
+}
 #homepage main section:nth-of-type(3) ul{
-	margin-top: 4em;
-	height: 24rem;
+	margin-top: 1em;
+	min-height: 24rem;
+	height: fit-content;
 	display: flex;
 	flex-flow: row nowrap;
 	overflow-x: scroll;
-	color: var(--color-text-white);
+	color: white;
 }
 #homepage main section:nth-of-type(3) li a{
 	display: grid;
@@ -220,7 +353,7 @@ header a {
 }
 
 
-/* { TITLE AND SECUNDARY NAV } */
+/* { Other Partners} */
 /*******************************/
 #homepage main section:nth-of-type(4){
 	display: flex;
@@ -234,6 +367,7 @@ header a {
 	width: 326px;
 	font-size: 0.8em;
 	margin: 3em 0 1em 0;
+	color: var(--color-text);
 }
 #homepage main section:nth-of-type(4) ul{
 	display: grid;
@@ -241,34 +375,38 @@ header a {
 	grid-column-gap: 0.55em;
 	grid-template-rows: repeat(3, fit-content(100%));
 	list-style-type: none;
+	background-color: var(--color-white);
 }
 #homepage main section:nth-of-type(4) li{
 	height: fit-content;
 }
 #homepage main section:nth-of-type(4) ul img{
-	height:1.55em;
-	width: auto;
+	height:auto;
+	width: 90%;
 }
 
-/* { TITLE AND SECUNDARY NAV } */
+/* { MAKING MUSIC BETTER, TOGETHER} */
 /*******************************/
 #homepage main section:nth-of-type(5){
 	display: grid;
 	grid-template-columns: 7.5% 85% 7.5%;
+	margin-top: 2em;
 }
 #homepage main section:nth-of-type(5) h2{
 	grid-area: 1 / 2 / 1 / 2;
 	font-size: 2.2em;
+	color: var(--color-text);
 }
 #homepage main section:nth-of-type(5) ul{
 	grid-area: 2 / 2 / 2 / 2;
 }
 #homepage main section:nth-of-type(5) li{
-	background-color: #F4F6FF;
+	background-color: var(--background-list);
 	display: flex;
 	flex-flow: column nowrap;
 	margin: 2.2em 0;
 	border-radius: 16px;
+	color: var(--color-text);
 }
 #homepage main section:nth-of-type(5) h3{
 	font-size: 1.8em;
@@ -281,16 +419,18 @@ header a {
 }
 #homepage main section:nth-of-type(5) li>img{
 	width: 100%;
+	border-radius: 16px;
+
 }
 #homepage main section:nth-of-type(5) li:nth-of-type(3)>img{
-	background-color: #F4F2FF;
+	background-color: var(--background-list);
 }
 #homepage main section:nth-of-type(5) li a{
 	display: flex;
 	flex-flow: row nowrap;
-	background-color: var(--background-black);
+	background-color: black;
 	width: max-content;
-	color: var(--color-text-white);
+	color: white;
 	padding: 8px 26px 8px 16px;
 	border-radius: 50px;
 	font-weight: 600;
@@ -312,6 +452,7 @@ header a {
 #homepage main section:nth-of-type(6) h2{
 	grid-area: 1 / 2 / 1 / 2;
 	font-size: 2.2em;
+	color: var(--color-text);
 }
 #homepage main section:nth-of-type(6) ul{
 	grid-area: 2 / 1 / 2 / 4;
@@ -333,12 +474,14 @@ header a {
 #homepage main section:nth-of-type(6) p{
 	font-weight: 100;
 	font-size: 1.47em;
+	color: var(--color-text);
 }
 #homepage main section:nth-of-type(6) h3{
 	font-size: 1.8em;
+	color: var(--color-text);
 }
 #homepage main section:nth-of-type(6) a{
-	color: #FF5353;
+	color: var(--main-color);
 
 }
 
@@ -353,10 +496,6 @@ header a {
 #propage header{
 	z-index: 1;
 	position: absolute;
-}
-header a {
-	background-color: var(--color-text-white);
-	color: var(---background-black);
 }
 #propage main{
 	display: grid;
@@ -387,33 +526,42 @@ header a {
 	text-align: center;
 }
 #propage section:first-of-type h1{
+	opacity: 0;
 	width: var(--standard-width);
 	font-size: 2.8em;
 	line-height: 100%;
+	animation: fadeIn 1s linear;
+	animation-fill-mode: forwards;
 }
 #propage section:first-of-type p{
+	opacity: 0;
 	width: var(--standard-width);
 	font-size: 1.5em;
 	font-weight: 400;
 	line-height: 100%;
 	margin: 1em 0;
+	animation: fadeIn 1s linear 0.5s;
+	animation-fill-mode: forwards;
 }
 #propage section:first-of-type a{
+	opacity: 0;
 	background-color: var(--main-color);
 	width: var(--standard-width);
 	padding: 0.6em;
 	font-size: 1.2em;
 	border-radius: var(--standaard-radius);
+	animation: fadeIn 1s linear 0.6s;
+	animation-fill-mode: forwards;
 }
 #propage main{
-	background-color: var(--background-dark);
+	background-color: var(--background);
 }
 
 
 /* { INFORMATION ARTICLES} */
 /***************************/
 #propage section:nth-of-type(2){
-	color: var(--color-text-white);
+	color: var(--color-text);
 	display: grid;
 	grid-column: span 3;
 	grid-template-columns: var(--propagegridtemplate);
@@ -451,7 +599,7 @@ header a {
 }
 #propage section:nth-of-type(2) article:nth-of-type(2) img{
 	width: 80%;
-	background-image: linear-gradient(rgb(22, 33, 37), rgba(255, 255, 0, 0), rgb(22, 33, 37)), url(../images/lyricvidback.png);
+	background-image: linear-gradient(var(--background), rgba(255, 255, 0, 0), var(--background)), url(../images/lyricvidback.png);
 	padding: 10%;
 	background-size: 200%;
 	background-position: 50% 50%;
@@ -460,8 +608,8 @@ header a {
 
 
 #propage section:nth-of-type(3){
-	background: url(../images/testoback.png) no-repeat, var(--color-background);
-	background-size: 100%;
+	background: url(../images/testoback.png) no-repeat, var(--background);
+	background-size: 200%;
 	display: grid;
 	grid-column: span 3;
 	grid-template-columns: 50% 50%;
@@ -473,9 +621,9 @@ header a {
 	grid-column-end: 3;
 }
 #propage section:nth-of-type(3) ul{
-	display: flex;
-	flex-flow: row no-wrap;
-	overflow-x: scroll;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
@@ -485,7 +633,10 @@ header a {
 	grid-template-columns: 25% 75%;
 	grid-template-rows: repeat(1fr);
 	padding-bottom: 4em;
-	background-color: var(--color-background);
+	background-color: var(--background);
+	grid-area: 1 / 1 / 2 / 2;
+	transition: 1s;
+	color: var(--color-text);
 }
 #propage section:nth-of-type(3) ul img:first-of-type{
 	grid-area: 1 / 1 / 2 / 3;
@@ -502,7 +653,9 @@ header a {
 	width: var(--standard-width);
 	justify-self: center;
 	font-size: 1.25em;
-	height: 7em;
+	min-height: 7em;
+	/* Dit zorgt ervoor dat stel dat de tekst te groot word in large text mode dat hij de ruimte neemt, terwijl hij wel nog in de normale modus de stijl behoud */
+	height: fit-content;
 	margin-top: 1em;
 }
 #propage section:nth-of-type(3) ul h3{
@@ -513,7 +666,7 @@ header a {
 #propage section:nth-of-type(3) ul p:nth-of-type(2){
 	grid-area: 4 / 2 / 5 / 3;
 	font-size: 1em;
-	color: var(--background-dark);
+	color: var(--color-text);
 	font-style: italic;
 	line-height: 100%;
 }
@@ -527,3 +680,21 @@ header a {
 	width: 55%;
 	justify-self: center;
 }
+
+
+
+#propage section:nth-of-type(3) button{
+	display: flex;
+	background-color: var(--main-color);
+	width: 3.5em;
+	height: 3.5em;
+	border: none;
+	border-radius: 100%;
+	justify-self: center;
+	justify-content: center;
+	align-items: center;
+}
+#propage section:nth-of-type(3) button img{
+	width: 20%;
+}
+

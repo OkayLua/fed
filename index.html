@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -15,9 +15,23 @@
 
 <body id="homepage">
 	<header>
-		<img id="Musixmatch Logo" src="images/musixmatchlogo.png">
-		<!-- Indien moeite signin -->
-		<a href="musixmatchpro.html">Sign In</a>
+		<img alt="Musixmatch Logo" src="images/musixmatchlogo.png">
+		<button aria-label="Open Hamburgermenu"><img src="images/hamburger.png" alt="Hamburger Open Icon"></button>
+		<nav class="hidden">
+			<button aria-label="Close Hamburgermenu"><img src="images/cross.png" alt="Hamburger Close Icon"></button>
+			<button aria-label="Toggle High Contrast Mode"><img src="images/highcontrast.png" alt="High Contrast Icon"></button>
+			<button aria-label="Toggle Text Size"><img src="images/textsize.png" alt="Text Size Icon"></button>
+
+			<ul>
+				<li><a href="musixmatchpro.html">Musixmatch Pro</a></li>
+				<li><a href="">Top Lyrics</a></li>
+				<li><a href="">Community</a></li>
+				<li><a href="">Academy</a></li>
+				<li><a href="">Podcasts</a></li>
+				<li><a href="musixmatchpro.html">Sign In</a></li>
+			</ul>
+			<img src="images/Type_Extended_Primary_White.png" alt="musixmatch logo">
+		</nav>
 	</header>
 	<main>
 		<section>
@@ -26,11 +40,11 @@
 					<h1>Enhancing the experience of music worldwide.</h1>
 				</li>
 				<!-- img 1 = icon, img 2 = arrow -->
-				<li><a><img src="images/suitcaseicon.png">For Partners<img src="images/arrowrightfirst.png"></a></li>
-				<li><a><img src="images/artisticon.png">For Artists<img src="images/arrowrightfirst.png"></a></li>
-				<li><a><img src="images/publicatoricon.png">For Publishers<img src="images/arrowrightfirst.png"></a>
+				<li><a><img src="images/suitcaseicon.png" alt="Suitcase Icon">For Partners<img src="images/arrowrightfirst.png" alt="Arrow Right"></a></li>
+				<li><a><img src="images/artisticon.png" alt="Artist Icon">For Artists<img src="images/arrowrightfirst.png"  alt="Arrow Right"></a></li>
+				<li><a><img src="images/publicatoricon.png" alt="Dollar Coin icon">For Publishers<img src="images/arrowrightfirst.png"  alt="Arrow Right"></a>
 				</li>
-				<li><a><img src="images/podcasticon.png"> For Podcasters<img src="images/arrowrightfirst.png"></a></li>
+				<li><a><img src="images/podcasticon.png" alt="Microphone Icon"> For Podcasters<img src="images/arrowrightfirst.png"  alt="Arrow Right"></a></li>
 			</ul>
 
 		</section>
@@ -38,41 +52,42 @@
 			<img src="images/musixmatchprologo.png" alt="Musixmatch Pro logo">
 			<h2>Distribute your lyrics everywhere</h2>
 			<a>Join Musixmatch Pro</a>
-			<img src="images/probanner.png">
+			<img src="images/probanner.png" alt="Collage of several Artist Singing with logo's of the companies Apple Music, Spotify, Amazon Prime Music, and Instagram">
 
 		</section>
-		<section id="testparent">
+		<section>
+			<h2>Our partners</h2>
 			<ul>
 				<!-- Spotify -->
 				<li>
-					<a class="test">
-						<img src="images/spotifybackground.png">
-						<img src="images/spotfylogo.png">
+					<a >
+						<img src="images/spotifybackground.png" alt="Screenshot mockup of the lyrics function in the Spotify app">
+						<img src="images/spotfylogo.png" alt="Spotify Logo">
 						<p>Real-time synced lyrics enhance users'listening experience and song engagement.</p>
 					</a>
 				</li>
 				<li>
 					<!-- Instagram -->
-					<a class="test">
-						<img src="images/instagrambackground.png">
-						<img src="images/instagramlogo.png">
+					<a>
+						<img src="images/instagrambackground.png" alt="Screenshot mockup of the lyrics function in Instagram Stories">
+						<img src="images/instagramlogo.png" alt="Instagram Logo">
 						<p>Lyrics can be added directly to Instagram Stories for enriched storytelling.</p>
 					</a>
 				</li>
 				<li>
 					<!-- Apple Music -->
-					<a class="test">
-						<img src="images/applemusicbackground.png">
-						<img src="images/applemusiclogo.png">
+					<a>
+						<img src="images/applemusicbackground.png" alt="Screenshot Mockup for the sing function in Apple Music">
+						<img src="images/applemusiclogo.png" alt="Apple Music">
 						<p>Lyrics search option and display allow for easy song discovery and a heightened experience.
 						</p>
 					</a>
 				</li>
 				<li>
 					<!-- Vevo -->
-					<a class="test">
-						<img src="images/vevobackground.png">
-						<img src="images/vevologo.png">
+					<a>
+						<img src="images/vevobackground.png" alt="Screenshot Mockup of the Vevo website in Safari">
+						<img src="images/vevologo.png" alt="Vevo Logo"> 
 						<p>Emotion-based ads targeting, thanks to AI-powered song moods.</p>
 					</a>
 				</li>
@@ -80,57 +95,58 @@
 			<a>See more</a>
 		</section>
 		<section>
+			<h2 class="hidden">Other Partners</h2>
 			<p>We work with world-renowned businesses from the music industry to bring your favorite music to life.</p>
 			<ul>
-				<li><img src="images/spotfylogoblack.png"></li>
-				<li><img src="images/applemusiclogoblack.png"></li>
-				<li><img src="images/amazonlogoblack.png"></li>
-				<li><img src="images/shazamlogoblack.png"></li>
-				<li><img src="images/googlelogoblack.png"></li>
-				<li><img src="images/instagramlogoback.png"></li>
-				<li><img src="images/tidallogoblack.png"></li>
-				<li><img src="images/vevologoblack.png"></li>
-				<li><img src="images/binglogoblack.png"></li>
+				<li><img src="images/spotfylogoblack.png" alt="Spotify Logo"></li>
+				<li><img src="images/applemusiclogoblack.png" alt="Apple Music Logo"></li>
+				<li><img src="images/amazonlogoblack.png" alt="Amazon Logo"></li>
+				<li><img src="images/shazamlogoblack.png" alt="Shazam Logo"></li>
+				<li><img src="images/googlelogoblack.png" alt="Google Logo"></li>
+				<li><img src="images/instagramlogoback.png" alt="Instagram Logo"></li>
+				<li><img src="images/tidallogoblack.png" alt="Tidal Logo"></li>
+				<li><img src="images/vevologoblack.png" alt="Vevo Logo"></li>
+				<li><img src="images/binglogoblack.png" alt="Bing Logo"></li>
 			</ul>
 		</section>
 		<section>
 			<h2>Making music better, together</h2>
 			<ul>
 				<li>
-					<img src="images/communityimage.png" alt="">
+					<img src="images/communityimage.png" alt="Screenshot of the Community Tab in the Musixmatch App">
 					<h3>Contribute to the world's biggest music catalog</h3>
 					<p>Over 20 million people from around the world contribute to creating the largest catalog of lyrics
 						ever. How cool is that?</p>
-					<a><img src="images/downloadicon.svg" alt="">Get the app</a>
+					<a><img src="images/downloadicon.svg" alt="Download Icon">Get the app</a>
 				</li>
 				<li>
-					<img src="images/lyricalperfectionban.png" alt="">
+					<img src="images/lyricalperfectionban.png" alt="Circle Cut-out of a woman's portraitphoto surrounded by 2 rings containing icons and more cut-outs ">
 					<h3>Ensure lyrical perfection</h3>
 					<p>Local Content Editor teams across the globe ensure that all lyrics meet our high standards.
 						Reviewing all content submitted to verify its authenticity.</p>
-					<a><img src="images/addicon.png" alt=""> Become a Curator</a>
+					<a><img src="images/addicon.png" alt="Add icon"> Become a Curator</a>
 				</li>
 				<li>
-					<img src="images/catalogban.png" alt="">
+					<img src="images/catalogban.png" alt="Collage of photo's oof Billie Eylish, someone, Drake, Dua Lipa and The Weeknd">
 					<h3>Manage your lyrics catalog</h3>
 					<p>Verified artists are able to manage and distribute their own lyric catalog on any international
 						music channel – such as Spotify or Instagram.</p>
-					<a><img src="images/checkicon.png" alt="">Manage your catalog</a>
+					<a><img src="images/checkicon.png" alt="Circle icon with check inside">Manage your catalog</a>
 				</li>
 				<li>
-					<img src="images/deepdataban.png" alt="">
+					<img src="images/deepdataban.png" alt="Abstract light flow with several text bubbles containing (top to bottom) Sentiment, Part of speech, Entity Extraction, Classification, Topic Modeling">
 					<h3>Deep data for listener insight</h3>
 					<p>Our proprietary AI has been built by the millions of users on our platform. It is able to extract
 						deep metadata such as entities and moods but also audio features like tempo and valence.</p>
-					<a><img src="images/infoicon.png" alt="">Learn more</a>
+					<a><img src="images/infoicon.png" alt="Circle Icon with Info icon inside">Learn more</a>
 				</li>
 				<li>
-					<img src="images/royaltiesban.png" alt="">
+					<img src="images/royaltiesban.png" alt="Collage of several i think publishers?">
 					<h3>Earn royalties from global distribution</h3>
 					<p>We work with thousands of music publishers across the globe to maximize song success. We provide
 						reports summarizing usage data on third party platforms and pay royalties directly back to the
 						rights’ owners.</p>
-					<a><img src="images/editicon.png" alt="">Partner with us</a>
+					<a><img src="images/editicon.png" alt="Pen (edit) icon">Partner with us</a>
 				</li>
 			</ul>
 		</section>
@@ -138,21 +154,21 @@
 			<h2>The latest news from Musixmatch</h2>
 			<ul>
 				<li>
-					<img src="images/tpgban.png">
+					<img src="images/tpgban.png" alt="Musixmatch + TPG logo's">
 					<h3>Announcing Strategic Investment from TPG</h3>
 					<p>Partnership Strengthens Musixmatch's Position and Drives Creator-Centric Expansion
 						Opportunnities.</p>
 					<a>Read more</a>
 				</li>
 				<li>
-					<img src="images/preformtagban.png">
+					<img src="images/preformtagban.png" alt="Screenshot Mockup banner of the new performer tag function">
 					<h3>"Who's singing?" This is the answer.</h3>
 					<p>We are adding performer tags to our lyrics, time-synced with the music so you can tap into new
 						featured artists as soon as you hear from them.</p>
 					<a>Read more</a>
 				</li>
 				<li>
-					<img src="images/fluentbannews.png">
+					<img src="images/fluentbannews.png" alt="blue banner with spotify logo and musixmatch logo in one bubble and other containing the words We did, it, lyrics, are back, globally">
 					<h3>Get fluent with Spotify lyrics</h3>
 					<p>We are so excited to officially announce that Musixmatch has been chosen by Spotify to power
 						their lyrics expansion.</p>
@@ -160,7 +176,7 @@
 				</li>
 			</ul>
 		</section>
-		<section>
+		<!-- <section>
 			<li>
 				<h2>Let's Talk</h2>
 				<p>We'd love to hear how we can help you take your music experience to the next level.
@@ -174,7 +190,7 @@
 				</p>
 				<a>Join the band</a>
 			</li>
-		</section>
+		</section> -->
 	</main>
 	<footer>
 
