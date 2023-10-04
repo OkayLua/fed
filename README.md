@@ -124,38 +124,63 @@ Volledige eerste test:
  ### 18/09
  Ik ben begonnen aan de 2e pagina. Voor deze pagina heb ik de volledige pagina opgedeeld in een grid voor de margins aan dezijkanten. Hierdoor kreeg ik wel een probleem toen ik een element had dat voledig spreide over de pagina.
  <br>
-<img src="readme-images/breakdown1.png" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/fullelement.png" width="375px" alt="breakdown van de hele pagina">
   Wat ik kon doen is een grid in een grid maken. Ik ga dan de volledige sectie in de hoofdgrid volledig uitspreiden ipv alleen in column 2 en dan dezelfde grid in de sectie maken en daarin alles in column 2 zetten behalve het element dat spreide.
 
   Nog een probleem is de 2 overlappende foto's. Ik kon hiervoor nog een grid maken maar dan had ik een grid in een grid in een grid. Uiteindelijk heb ik besloten dat de foto op de achtergrond inderdaad gewoon een achtergrond was en heb ik deze erin gezet d.m.v. een css background image.
    <br>
-    <img src="readme-images/breakdown1.png" width="375px" alt="breakdown van de hele pagina">
+    <img src="readme-images/dubbelefoto.png" width="375px" alt="breakdown van de hele pagina">
 
  ### 21/09
  Ik heb vandaag het carousel op de Pro Pagina gemaakt. Ik heb hiervoor javascript gebruikt Het was even uitvogelen nadat ik het lang niet heb gebruikt maar het is mij uiteindelijk gelukt met de volgende code:
 <br>
-<img src="readme-images/breakdown4.png" width="375px" alt="breakdown van de hele pagina">
-<img src="readme-images/breakdown4.png" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/Screenshot 2023-09-26 174724.png" width="375px" alt="breakdown van de hele pagina">
+Ik heb hier alle carousel elementen op hidden gezet behalve degene die getoond werd. Ik heb daarna met de knoppen er voor gezogt dat er een Var word aangepast die bepaald om welke item we nu zitten. Dit item werd dan op hidden gezet en het volgende element werd van hidden afgehaald
 #### Opmerking
 Op een gegeven moment stopte de code met werken. Ik heb de carousel nu gemaakt met een opacity in plaats van display none property. De code ziet er nu als volgt uit:
  <br>
-<img src="readme-images/breakdown4.png" width="375px" alt="breakdown van de hele pagina">
-<img src="readme-images/breakdown4.png" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/nieuwetestcode.png" width="375px" alt="breakdown van de hele pagina">
+
 
 
   ### Verslag van meeting
   #### Voorbereiding:
   Ik ging de meeting in met de volgende vragen:
+  Moet ik iets doen aan de navigatie?
+  Kan ik headers op hidden zetten?
+  Hoe maak ik een darkmode?
   
   #### Uitkomsten:
   hier na afloop snel de uitkomsten van de meeting vastleggen
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
+  - Na overleg heb ik besloten toch een navigatie aan te maken.
+  - In plaats op hidden zet ik headers die niet gezien hoeven te worden maar wel op gepakt moeten worden door de screenreader op Visibility Hidden
+  - Elaine heeft me geholpen met het onderzoeken naar Dark Mode
+  
   ### 24/09
-  Ik ben na aanleiding van de feedback begonnen aan een hamburger menu om een navigatie op de mobiele pagina te zetten, iets wat de originele website niet had,
+  Ik ben na aanleiding van de feedback begonnen aan een hamburger menu om een navigatie op de mobiele pagina te zetten, iets wat de originele website niet had.
+  Ik heb hiervoor als placeholder de elementen uit de desktop versie gepakt.
+  Het menu zag er als volgt uit:
+   <br>
+<img src="readme-images/hamburgermenu.png" width="375px" alt="breakdown van de hele pagina">
+Ik heb de links in het menu ook states gegeven:
+ <br>
+<img src="readme-images/buttonstates1.png" width="375px" alt="breakdown van de hele pagina">
+
+### 27/09
+Ik ben begonnen aan de Dark Mode. Dit ging best wel snel. Maar doordat mijn css niet heel consistent was moest ik veel aanpassen in de CSS op de Darkmode code zo simpel mogelijk gehouden.
+Het resultaat was als volgt:
+ <br>
+<img src="readme-images/darkmode.png" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/darkmodecode.png" width="375px" alt="breakdown van de hele pagina">
+Nog een probleem was de Pro pagina: Die zat namelijk standaard in darkmode. Deze heb ik dus eerst een light mode gegeven en daarna een nieuwe darkmode.
+Ik heb namelijk ooit een keer een artikel gelezen over darkmode: Wit op zwart is een heftig contrast dat voor pijn aan de ogen kan zorgen. Ik heb daarom gekozen voor een iets roze wit (Naar de huisstijl) en een oets blauwerige zwart.
+De light mode van de pro page zag er zo uit:
+<br>
+<img src="readme-images/lightmode.png" width="375px" alt="breakdown van de hele pagina">
+
+en zo zag de nieuwe darkmode eruit:
+<br>
+<img src="readme-images/truelight.png" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
@@ -183,8 +208,14 @@ Op een gegeven moment stopte de code met werken. Ik heb de carousel nu gemaakt m
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Tot nu toe gaat alles goed. Ik heb besloten om nog 2 extra modes. Dark mode en High Contrast mode.
+  Deze heb ik besloten iets anders te maken. Ik wilde namelijk gaan werken met Local storage zodat deze instelling werd meegenomen over pagina's
 
+  Chat gpt > Foto code > foto uitleg
+
+  Nieuwe knoppen in menu
+
+  De modes zelf> Foto contrast > foto li > Foto grote text
 
 
   ### Verslag van meeting
