@@ -1,4 +1,4 @@
-# Procesverslag
+ # Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -145,7 +145,8 @@ Op een gegeven moment stopte de code met werken. Ik heb de carousel nu gemaakt m
 
   ### Verslag van meeting
   #### Voorbereiding:
-
+  Ik ging de meeting in met de volgende vragen:
+  
   #### Uitkomsten:
   hier na afloop snel de uitkomsten van de meeting vastleggen
   - punt 1
@@ -184,15 +185,6 @@ Op een gegeven moment stopte de code met werken. Ik heb de carousel nu gemaakt m
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
