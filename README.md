@@ -125,16 +125,18 @@ Volledige eerste test:
  Ik ben begonnen aan de 2e pagina. Voor deze pagina heb ik de volledige pagina opgedeeld in een grid voor de margins aan dezijkanten. Hierdoor kreeg ik wel een probleem toen ik een element had dat voledig spreide over de pagina.
  <br>
 <img src="readme-images/fullelement.png" width="375px" alt="breakdown van de hele pagina">
+<br>
   Wat ik kon doen is een grid in een grid maken. Ik ga dan de volledige sectie in de hoofdgrid volledig uitspreiden ipv alleen in column 2 en dan dezelfde grid in de sectie maken en daarin alles in column 2 zetten behalve het element dat spreide.
 
   Nog een probleem is de 2 overlappende foto's. Ik kon hiervoor nog een grid maken maar dan had ik een grid in een grid in een grid. Uiteindelijk heb ik besloten dat de foto op de achtergrond inderdaad gewoon een achtergrond was en heb ik deze erin gezet d.m.v. een css background image.
    <br>
-    <img src="readme-images/dubbelefoto.png" width="375px" alt="breakdown van de hele pagina">
+    <img src="readme-images/dubbelefoto.png" height="375px" alt="breakdown van de hele pagina">
 
  ### 21/09
  Ik heb vandaag het carousel op de Pro Pagina gemaakt. Ik heb hiervoor javascript gebruikt Het was even uitvogelen nadat ik het lang niet heb gebruikt maar het is mij uiteindelijk gelukt met de volgende code:
 <br>
 <img src="readme-images/Screenshot 2023-09-26 174724.png" width="375px" alt="breakdown van de hele pagina">
+<br>
 Ik heb hier alle carousel elementen op hidden gezet behalve degene die getoond werd. Ik heb daarna met de knoppen er voor gezogt dat er een Var word aangepast die bepaald om welke item we nu zitten. Dit item werd dan op hidden gezet en het volgende element werd van hidden afgehaald
 #### Opmerking
 Op een gegeven moment stopte de code met werken. Ik heb de carousel nu gemaakt met een opacity in plaats van display none property. De code ziet er nu als volgt uit:
@@ -162,21 +164,24 @@ Op een gegeven moment stopte de code met werken. Ik heb de carousel nu gemaakt m
   Het menu zag er als volgt uit:
    <br>
 <img src="readme-images/hamburgermenu.png" width="375px" alt="breakdown van de hele pagina">
+<br>
 Ik heb de links in het menu ook states gegeven:
  <br>
-<img src="readme-images/buttonstates1.png" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/buttonstates1.png" height="375px" alt="breakdown van de hele pagina">
 
 ### 27/09
 Ik ben begonnen aan de Dark Mode. Dit ging best wel snel. Maar doordat mijn css niet heel consistent was moest ik veel aanpassen in de CSS op de Darkmode code zo simpel mogelijk gehouden.
 Het resultaat was als volgt:
  <br>
 <img src="readme-images/darkmode.png" width="375px" alt="breakdown van de hele pagina">
-<img src="readme-images/darkmodecode.png" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/darkmodecode.png" height="375px" alt="breakdown van de hele pagina">
+<br>
 Nog een probleem was de Pro pagina: Die zat namelijk standaard in darkmode. Deze heb ik dus eerst een light mode gegeven en daarna een nieuwe darkmode.
 Ik heb namelijk ooit een keer een artikel gelezen over darkmode: Wit op zwart is een heftig contrast dat voor pijn aan de ogen kan zorgen. Ik heb daarom gekozen voor een iets roze wit (Naar de huisstijl) en een oets blauwerige zwart.
 De light mode van de pro page zag er zo uit:
 <br>
 <img src="readme-images/lightmode.png" width="375px" alt="breakdown van de hele pagina">
+<br>
 
 en zo zag de nieuwe darkmode eruit:
 <br>
@@ -194,7 +199,7 @@ en zo zag de nieuwe darkmode eruit:
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Ik had nog een plek een sectie zonder header en mijn propage had geen ALT's nog
 
 </details>
 
@@ -212,45 +217,46 @@ en zo zag de nieuwe darkmode eruit:
   Deze heb ik besloten iets anders te maken. Ik wilde namelijk gaan werken met Local storage zodat deze instelling werd meegenomen over pagina's
 
   Chat gpt > Foto code > foto uitleg
+  Ik heb eerst chat gpt gevraagd hoe dit moet. (Zie bronnen voor volledig gesprek). Zij had de code voor mij geschreven maar ik snapte deze niet dus ik had gevraagd om elk onderdeel nog even uit te leggen begreep ik het en heb ik de code zelf geschreven en aangepast.
+  <br>
+<img src="readme-images/chatgpthelp.png" height="375px" alt="breakdown van de hele pagina">
+<br>
+  <br>
+<img src="readme-images/gptdetail.png" height="375px" alt="breakdown van de hele pagina">
+<br>
+  
+  Dit werkte dus nu kon ik beide modi maken.
+  Ik ben begonnen met onderzoek doen naar kleurcontrasten en heb op basis daarvan een hoogcontrast schema opgesteld. Het hoge contrast werd toegevoegd doormiddel van classes aan de body.
+  Omdat het volledige achtergrond nu zwart is, Hadden meerdere elementen geen duidelijke visuele hirachie. Dit ging met namen om List elementen deze heb ik dus een extra omleining gegeven
+    <br>
+<img src="readme-images/highcontrastli.png" height="375px" alt="breakdown van de hele pagina">
+<br>
 
-  Nieuwe knoppen in menu
+Om de modi te activeren staan er nu nieuwe knoppen in het Hamburger menu
+  <br>
+<img src="readme-images/nieuwmeny.png" height="375px" alt="breakdown van de hele pagina">
+<br>
 
-  De modes zelf> Foto contrast > foto li > Foto grote text
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
-</details>
-
-
-
-
-
+zo ziet de volledige large text en contrast modi eruit
+  <br>
+<img src="readme-images/darkmode.png" height="375px" alt="breakdown van de hele pagina">
+<br>
+  <br>
+<img src="readme-images/highcontrastmode.png" height="375px" alt="breakdown van de hele pagina">
+<br>
+  
 ## Eindgesprek (week 5)
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
-
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+Ik heb tijdens dit project meer geleerd over toegankelijkheid en heb voor dit project ook meer onderzoek gedaan hierna, dit ging dus best wel goed. Ook heb ik geleerd hoe ik localstorage moet gebruiken en deze kon gebruiken voor style changes, die ook heb kunnen uitvoeren omdat ik heb geleerd over custom properties. Dit is ook de eerste keer dat ik een hamburger menu.
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+Ik had graag mijn CSS opnieuw gedaan omdat ik het best een rommel vond alleen hier ben ik niet aan toe gekomen. Ik had graag ook nog naar responsiveness gekeken aangezien dit niet mijn sterkste kan is en ik dit graag verder had ontdekt. Ook ben ik tijdens dit project begonnen met de code voor mijn portefolio waar ik veel heb geleerd en gedaan. Dingen die ik ook hier had willen toepassen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+Ik heb ook niet alles kunnen doen, zo missen beide pagina's de laatste sectie en een footer.
 </details>
 
 
@@ -266,8 +272,7 @@ en zo zag de nieuwe darkmode eruit:
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. [bron 1](https://chat.openai.com/share/dada8ec5-f187-40ad-8f30-bdf88e9b9e40)https://chat.openai.com/share/dada8ec5-f187-40ad-8f30-bdf88e9b9e40
+  2. Elaine
 
 </details>
